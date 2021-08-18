@@ -8,9 +8,14 @@
  *  refatoração. Alé de uma redução consideravel de bugs.
  * 
  *      Existem 3 tipos de testes automátizados:
- *      - teste unitário
- *      - teste de integração 
+ *      - teste unitário        == testar pequenas partes do cód, (método, classe);
+ * 
+ *      - teste de integração   == Routes->Controller->Service->Repository
+ *                              <-Repository<-Service<-Controler 
+ *                              *Um teste de uma requisição por completo. 
+ * 
  *      - teste end to end
+ * 
  *  # Leitura sobre os tipos de testes automátizados:
  *      -https://www.devmedia.com.br/dominando-os-tipos-de-testes-automatizados/33867
  * 
