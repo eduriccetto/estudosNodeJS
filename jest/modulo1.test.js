@@ -7,6 +7,6 @@ describe('basic feature', ()=> {     // descrição do teste
     })
     
     it('should return the bad value', ()=> {  // um test que dá errado só para testar.
-        expect(modulo1.func1(10)).toBe(12)
+        expect(modulo1.func1(10)).toBe(11)    // podemos trocar (11) por (12)
     })
 })

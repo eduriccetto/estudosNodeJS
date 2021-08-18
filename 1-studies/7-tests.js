@@ -43,7 +43,8 @@
             "jest": "^27.0.6"
         },
         "scripts": {
-            "test": "jest"          // acrescentando esta parte
+            "test": "jest",          // acrescentando esta parte
+            "test-coverage": "jest --coverage"  // acrescentando dependencias [coverage]
         }
         }
 
