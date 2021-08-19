@@ -16,8 +16,10 @@ const bodyParser = require('body-parser');
     app.use(bobyParse.json())
 
     // Rotas
-    app.get('/', function(req, res) {
-        res.render('home')    // arq 'home' fica na mesma pasta do 'forms', na views
+    app.get('/', function(req, res) {                                 // Onde esta escrito posts, pode
+        Post.findAll({order: [['id', 'DESC']]}).then(function(posts){ // colocar o nome que quizer.
+            res.render('home', {posts: posts})// arq 'home' fica na mesma pasta do 'forms', na views
+        })
     })
 
     app.get('/cad', function(req, res) {
