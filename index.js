@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 const handlebars = require('express-handlebars');
 const bobyParse = require('body-parser');
-const Post = require('./modules/6.1-TestPost');
+const Post = require('./modules/6.1-post');
 const bodyParser = require('body-parser');
-const { create } = require('express-handlebars');
 
 // config
 
@@ -17,16 +16,20 @@ const { create } = require('express-handlebars');
     app.use(bobyParse.json())
 
     // Rotas
+    app.get('/', function(req, res) {
+        res.render('home')    // arq 'home' fica na mesma pasta do 'forms', na views
+    })
+
     app.get('/cad', function(req, res) {
         res.render('forms')
     })
 
     app.post('/add', function(req, res) {
-        create.Post({
+        Post.create({
             titulo: req.body.titulo,
             conteudo: req.body.conteudo
         }).then(function(){
-            res.send('Post criado com sucesso!')
+            res.redirect('/')
         }).catch(function(erro){
             res.send('Ouve um erro: ' + erro)
         })

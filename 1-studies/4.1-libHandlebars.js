@@ -15,7 +15,7 @@
      ------------------------------------------------------------------
  */
 
- // - Em nosso arquivo 4.1-TestLibHandlebars.js, vamos fazer também algumas alterações.
+ // - Em nosso arquivo 4.1-libHandlebars.js, vamos fazer também algumas alterações.
 
 
  const express = require('express');            

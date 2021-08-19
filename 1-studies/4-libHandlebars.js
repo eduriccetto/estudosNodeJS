@@ -90,6 +90,6 @@
 
  /**
   * Para funcionar, é preciso estar na pasta raiz para chamar o forms. Portando criei um arquivo
-  * chamado "app.js na pasta raiz onde fiz um require do arquivo "4-testLibHandlebars.js". E apartir de
+  * chamado "app.js na pasta raiz onde fiz um require do arquivo "4-libHandlebars.js". E apartir de
   * agora, sempre que precisarmos rodar algo, vamos tentar puxar por require neste "app.js".
   */

@@ -1,4 +1,4 @@
-const db = require('./6-TestDataStructure')
+const db = require('./6-dataStructure')
 
 const Post = db.sequelize.define('postagens', {
     titulo: {

@@ -1,1 +1,1 @@
-require('./2-scriptsStudies/5-libBody-parser');
+require('./index');
