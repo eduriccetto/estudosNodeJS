@@ -27,6 +27,16 @@
  *      }
  * 
  * 
+ *      *Verificar o status
+ *          -sudo systemctl status mongod
+        *Inicializando
+            -sudo systemctl start mongod
+        *Rodando
+            -mongo
+ * 
+ 
  *      Ref: http://lucasmaiaesilva.com.br/posts/usando-o-mongo-shell/
  *           https://terminalroot.com.br/2020/02/mongodb.html
+ * 
+ *           https://www.youtube.com/watch?v=yB5EWH5_XmA&ab_channel=TerminalRoot
  */
